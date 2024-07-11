@@ -1,0 +1,764 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA8CCC382C3FD32700C01C00 /* TikkeulApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC372C3FD32700C01C00 /* TikkeulApp.swift */; };
+		CA8CCC3A2C3FD32700C01C00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC392C3FD32700C01C00 /* ContentView.swift */; };
+		CA8CCC3C2C3FD32900C01C00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */; };
+		CA8CCC3F2C3FD32900C01C00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8CCC3E2C3FD32900C01C00 /* Preview Assets.xcassets */; };
+		CA8CCC492C3FD32900C01C00 /* TikkeulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC482C3FD32900C01C00 /* TikkeulTests.swift */; };
+		CA8CCC532C3FD32900C01C00 /* TikkeulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC522C3FD32900C01C00 /* TikkeulUITests.swift */; };
+		CA8CCC552C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */; };
+		CAC466C52C3FF38900FA3983 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CAC466C42C3FF38900FA3983 /* .swiftlint.yml */; };
+		CAC466C82C3FF6FB00FA3983 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CAC466C72C3FF6FB00FA3983 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA8CCC452C3FD32900C01C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8CCC2C2C3FD32700C01C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8CCC332C3FD32700C01C00;
+			remoteInfo = Tikkeul;
+		};
+		CA8CCC4F2C3FD32900C01C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA8CCC2C2C3FD32700C01C00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA8CCC332C3FD32700C01C00;
+			remoteInfo = Tikkeul;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA8CCC342C3FD32700C01C00 /* Tikkeul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tikkeul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CCC372C3FD32700C01C00 /* TikkeulApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulApp.swift; sourceTree = "<group>"; };
+		CA8CCC392C3FD32700C01C00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA8CCC3E2C3FD32900C01C00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA8CCC442C3FD32900C01C00 /* TikkeulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikkeulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CCC482C3FD32900C01C00 /* TikkeulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulTests.swift; sourceTree = "<group>"; };
+		CA8CCC4E2C3FD32900C01C00 /* TikkeulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikkeulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA8CCC522C3FD32900C01C00 /* TikkeulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulUITests.swift; sourceTree = "<group>"; };
+		CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAC466C42C3FF38900FA3983 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA8CCC312C3FD32700C01C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC466C82C3FF6FB00FA3983 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC412C3FD32900C01C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC4B2C3FD32900C01C00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA8CCC2B2C3FD32700C01C00 = {
+			isa = PBXGroup;
+			children = (
+				CAC466C42C3FF38900FA3983 /* .swiftlint.yml */,
+				CA8CCC362C3FD32700C01C00 /* Tikkeul */,
+				CA8CCC472C3FD32900C01C00 /* TikkeulTests */,
+				CA8CCC512C3FD32900C01C00 /* TikkeulUITests */,
+				CA8CCC352C3FD32700C01C00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA8CCC352C3FD32700C01C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC342C3FD32700C01C00 /* Tikkeul.app */,
+				CA8CCC442C3FD32900C01C00 /* TikkeulTests.xctest */,
+				CA8CCC4E2C3FD32900C01C00 /* TikkeulUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA8CCC362C3FD32700C01C00 /* Tikkeul */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC612C3FE96600C01C00 /* Application */,
+				CA8CCC6D2C3FEA8300C01C00 /* Common */,
+				CA8CCC642C3FE97600C01C00 /* Data */,
+				CA8CCC632C3FE97200C01C00 /* Domain */,
+				CA8CCC662C3FE9EC00C01C00 /* Infrastructure */,
+				CA8CCC622C3FE96D00C01C00 /* Presentation */,
+				CAC466C12C3FF34A00FA3983 /* Resource */,
+				CA8CCC3D2C3FD32900C01C00 /* Preview Content */,
+			);
+			path = Tikkeul;
+			sourceTree = "<group>";
+		};
+		CA8CCC3D2C3FD32900C01C00 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC3E2C3FD32900C01C00 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA8CCC472C3FD32900C01C00 /* TikkeulTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC482C3FD32900C01C00 /* TikkeulTests.swift */,
+			);
+			path = TikkeulTests;
+			sourceTree = "<group>";
+		};
+		CA8CCC512C3FD32900C01C00 /* TikkeulUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC522C3FD32900C01C00 /* TikkeulUITests.swift */,
+				CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */,
+			);
+			path = TikkeulUITests;
+			sourceTree = "<group>";
+		};
+		CA8CCC612C3FE96600C01C00 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC372C3FD32700C01C00 /* TikkeulApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CA8CCC622C3FE96D00C01C00 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC392C3FD32700C01C00 /* ContentView.swift */,
+				CA8CCC6E2C3FEA8C00C01C00 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CA8CCC632C3FE97200C01C00 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC682C3FEA2500C01C00 /* Entities */,
+				CA8CCC692C3FEA3100C01C00 /* Interface */,
+				CA8CCC6B2C3FEA5C00C01C00 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CA8CCC642C3FE97600C01C00 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC672C3FEA0200C01C00 /* Network */,
+				CA8CCC652C3FE99300C01C00 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CA8CCC652C3FE99300C01C00 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CA8CCC662C3FE9EC00C01C00 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC6C2C3FEA7500C01C00 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CA8CCC672C3FEA0200C01C00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8CCC682C3FEA2500C01C00 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CA8CCC692C3FEA3100C01C00 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC6A2C3FEA3900C01C00 /* Repositories */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		CA8CCC6A2C3FEA3900C01C00 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CA8CCC6B2C3FEA5C00C01C00 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CA8CCC6C2C3FEA7500C01C00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8CCC6D2C3FEA8300C01C00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CA8CCC6E2C3FEA8C00C01C00 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CAC466C12C3FF34A00FA3983 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA8CCC332C3FD32700C01C00 /* Tikkeul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8CCC582C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "Tikkeul" */;
+			buildPhases = (
+				CA8CCC302C3FD32700C01C00 /* Sources */,
+				CA8CCC312C3FD32700C01C00 /* Frameworks */,
+				CA8CCC322C3FD32700C01C00 /* Resources */,
+				CA8CCC702C3FEED300C01C00 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tikkeul;
+			packageProductDependencies = (
+				CAC466C72C3FF6FB00FA3983 /* ComposableArchitecture */,
+			);
+			productName = Tikkeul;
+			productReference = CA8CCC342C3FD32700C01C00 /* Tikkeul.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA8CCC432C3FD32900C01C00 /* TikkeulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8CCC5B2C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "TikkeulTests" */;
+			buildPhases = (
+				CA8CCC402C3FD32900C01C00 /* Sources */,
+				CA8CCC412C3FD32900C01C00 /* Frameworks */,
+				CA8CCC422C3FD32900C01C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA8CCC462C3FD32900C01C00 /* PBXTargetDependency */,
+			);
+			name = TikkeulTests;
+			productName = TikkeulTests;
+			productReference = CA8CCC442C3FD32900C01C00 /* TikkeulTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA8CCC4D2C3FD32900C01C00 /* TikkeulUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA8CCC5E2C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "TikkeulUITests" */;
+			buildPhases = (
+				CA8CCC4A2C3FD32900C01C00 /* Sources */,
+				CA8CCC4B2C3FD32900C01C00 /* Frameworks */,
+				CA8CCC4C2C3FD32900C01C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA8CCC502C3FD32900C01C00 /* PBXTargetDependency */,
+			);
+			name = TikkeulUITests;
+			productName = TikkeulUITests;
+			productReference = CA8CCC4E2C3FD32900C01C00 /* TikkeulUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA8CCC2C2C3FD32700C01C00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CA8CCC332C3FD32700C01C00 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CA8CCC432C3FD32900C01C00 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA8CCC332C3FD32700C01C00;
+					};
+					CA8CCC4D2C3FD32900C01C00 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CA8CCC332C3FD32700C01C00;
+					};
+				};
+			};
+			buildConfigurationList = CA8CCC2F2C3FD32700C01C00 /* Build configuration list for PBXProject "Tikkeul" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA8CCC2B2C3FD32700C01C00;
+			packageReferences = (
+				CAC466C62C3FF6FB00FA3983 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
+			productRefGroup = CA8CCC352C3FD32700C01C00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA8CCC332C3FD32700C01C00 /* Tikkeul */,
+				CA8CCC432C3FD32900C01C00 /* TikkeulTests */,
+				CA8CCC4D2C3FD32900C01C00 /* TikkeulUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA8CCC322C3FD32700C01C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC466C52C3FF38900FA3983 /* .swiftlint.yml in Resources */,
+				CA8CCC3F2C3FD32900C01C00 /* Preview Assets.xcassets in Resources */,
+				CA8CCC3C2C3FD32900C01C00 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC422C3FD32900C01C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC4C2C3FD32900C01C00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA8CCC702C3FEED300C01C00 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA8CCC302C3FD32700C01C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CCC3A2C3FD32700C01C00 /* ContentView.swift in Sources */,
+				CA8CCC382C3FD32700C01C00 /* TikkeulApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC402C3FD32900C01C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CCC492C3FD32900C01C00 /* TikkeulTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8CCC4A2C3FD32900C01C00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8CCC552C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift in Sources */,
+				CA8CCC532C3FD32900C01C00 /* TikkeulUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA8CCC462C3FD32900C01C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8CCC332C3FD32700C01C00 /* Tikkeul */;
+			targetProxy = CA8CCC452C3FD32900C01C00 /* PBXContainerItemProxy */;
+		};
+		CA8CCC502C3FD32900C01C00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA8CCC332C3FD32700C01C00 /* Tikkeul */;
+			targetProxy = CA8CCC4F2C3FD32900C01C00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CA8CCC562C3FD32900C01C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA8CCC572C3FD32900C01C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA8CCC592C3FD32900C01C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tikkeul/Preview Content\"";
+				DEVELOPMENT_TEAM = WBG9V97XP4;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.Tikkeul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA8CCC5A2C3FD32900C01C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tikkeul/Preview Content\"";
+				DEVELOPMENT_TEAM = WBG9V97XP4;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.Tikkeul;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA8CCC5C2C3FD32900C01C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.TikkeulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tikkeul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tikkeul";
+			};
+			name = Debug;
+		};
+		CA8CCC5D2C3FD32900C01C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.TikkeulTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tikkeul.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tikkeul";
+			};
+			name = Release;
+		};
+		CA8CCC5F2C3FD32900C01C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.TikkeulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tikkeul;
+			};
+			name = Debug;
+		};
+		CA8CCC602C3FD32900C01C00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tikkuel.TikkeulUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tikkeul;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA8CCC2F2C3FD32700C01C00 /* Build configuration list for PBXProject "Tikkeul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CCC562C3FD32900C01C00 /* Debug */,
+				CA8CCC572C3FD32900C01C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8CCC582C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "Tikkeul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CCC592C3FD32900C01C00 /* Debug */,
+				CA8CCC5A2C3FD32900C01C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8CCC5B2C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "TikkeulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CCC5C2C3FD32900C01C00 /* Debug */,
+				CA8CCC5D2C3FD32900C01C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA8CCC5E2C3FD32900C01C00 /* Build configuration list for PBXNativeTarget "TikkeulUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA8CCC5F2C3FD32900C01C00 /* Debug */,
+				CA8CCC602C3FD32900C01C00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CAC466C62C3FF6FB00FA3983 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CAC466C72C3FF6FB00FA3983 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CAC466C62C3FF6FB00FA3983 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CA8CCC2C2C3FD32700C01C00 /* Project object */;
+}
