@@ -14,6 +14,7 @@
 		CA8CCC492C3FD32900C01C00 /* TikkeulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC482C3FD32900C01C00 /* TikkeulTests.swift */; };
 		CA8CCC532C3FD32900C01C00 /* TikkeulUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC522C3FD32900C01C00 /* TikkeulUITests.swift */; };
 		CA8CCC552C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */; };
+		CAC466C52C3FF38900FA3983 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CAC466C42C3FF38900FA3983 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		CA8CCC4E2C3FD32900C01C00 /* TikkeulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TikkeulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8CCC522C3FD32900C01C00 /* TikkeulUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulUITests.swift; sourceTree = "<group>"; };
 		CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikkeulUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CAC466C42C3FF38900FA3983 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		CA8CCC2B2C3FD32700C01C00 = {
 			isa = PBXGroup;
 			children = (
+				CAC466C42C3FF38900FA3983 /* .swiftlint.yml */,
 				CA8CCC362C3FD32700C01C00 /* Tikkeul */,
 				CA8CCC472C3FD32900C01C00 /* TikkeulTests */,
 				CA8CCC512C3FD32900C01C00 /* TikkeulUITests */,
@@ -100,7 +103,7 @@
 				CA8CCC632C3FE97200C01C00 /* Domain */,
 				CA8CCC662C3FE9EC00C01C00 /* Infrastructure */,
 				CA8CCC622C3FE96D00C01C00 /* Presentation */,
-				CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */,
+				CAC466C12C3FF34A00FA3983 /* Resource */,
 				CA8CCC3D2C3FD32900C01C00 /* Preview Content */,
 			);
 			path = Tikkeul;
@@ -239,6 +242,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		CAC466C12C3FF34A00FA3983 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -249,6 +260,7 @@
 				CA8CCC302C3FD32700C01C00 /* Sources */,
 				CA8CCC312C3FD32700C01C00 /* Frameworks */,
 				CA8CCC322C3FD32700C01C00 /* Resources */,
+				CA8CCC702C3FEED300C01C00 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -327,6 +339,8 @@
 				Base,
 			);
 			mainGroup = CA8CCC2B2C3FD32700C01C00;
+			packageReferences = (
+			);
 			productRefGroup = CA8CCC352C3FD32700C01C00 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAC466C52C3FF38900FA3983 /* .swiftlint.yml in Resources */,
 				CA8CCC3F2C3FD32900C01C00 /* Preview Assets.xcassets in Resources */,
 				CA8CCC3C2C3FD32900C01C00 /* Assets.xcassets in Resources */,
 			);
@@ -363,6 +378,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA8CCC702C3FEED300C01C00 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA8CCC302C3FD32700C01C00 /* Sources */ = {
@@ -534,7 +570,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tikkeul/Preview Content\"";
+				DEVELOPMENT_TEAM = WBG9V97XP4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -562,7 +600,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tikkeul/Preview Content\"";
+				DEVELOPMENT_TEAM = WBG9V97XP4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
