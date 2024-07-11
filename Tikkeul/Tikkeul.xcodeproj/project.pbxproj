@@ -94,8 +94,12 @@
 		CA8CCC362C3FD32700C01C00 /* Tikkeul */ = {
 			isa = PBXGroup;
 			children = (
-				CA8CCC372C3FD32700C01C00 /* TikkeulApp.swift */,
-				CA8CCC392C3FD32700C01C00 /* ContentView.swift */,
+				CA8CCC612C3FE96600C01C00 /* Application */,
+				CA8CCC6D2C3FEA8300C01C00 /* Common */,
+				CA8CCC642C3FE97600C01C00 /* Data */,
+				CA8CCC632C3FE97200C01C00 /* Domain */,
+				CA8CCC662C3FE9EC00C01C00 /* Infrastructure */,
+				CA8CCC622C3FE96D00C01C00 /* Presentation */,
 				CA8CCC3B2C3FD32900C01C00 /* Assets.xcassets */,
 				CA8CCC3D2C3FD32900C01C00 /* Preview Content */,
 			);
@@ -125,6 +129,114 @@
 				CA8CCC542C3FD32900C01C00 /* TikkeulUITestsLaunchTests.swift */,
 			);
 			path = TikkeulUITests;
+			sourceTree = "<group>";
+		};
+		CA8CCC612C3FE96600C01C00 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC372C3FD32700C01C00 /* TikkeulApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CA8CCC622C3FE96D00C01C00 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC392C3FD32700C01C00 /* ContentView.swift */,
+				CA8CCC6E2C3FEA8C00C01C00 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CA8CCC632C3FE97200C01C00 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC682C3FEA2500C01C00 /* Entities */,
+				CA8CCC692C3FEA3100C01C00 /* Interface */,
+				CA8CCC6B2C3FEA5C00C01C00 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		CA8CCC642C3FE97600C01C00 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC672C3FEA0200C01C00 /* Network */,
+				CA8CCC652C3FE99300C01C00 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CA8CCC652C3FE99300C01C00 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CA8CCC662C3FE9EC00C01C00 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC6C2C3FEA7500C01C00 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CA8CCC672C3FEA0200C01C00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8CCC682C3FEA2500C01C00 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CA8CCC692C3FEA3100C01C00 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CA8CCC6A2C3FEA3900C01C00 /* Repositories */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		CA8CCC6A2C3FEA3900C01C00 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		CA8CCC6B2C3FEA5C00C01C00 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		CA8CCC6C2C3FEA7500C01C00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CA8CCC6D2C3FEA8300C01C00 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CA8CCC6E2C3FEA8C00C01C00 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
